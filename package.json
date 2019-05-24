@@ -1,5 +1,5 @@
 {
-  "name": "paper-kit-2-angular",
+  "name": "noisetrap",
   "version": "1.2.0",
   "license": "MIT",
   "repository": {
@@ -14,6 +14,8 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "install:clean": "rm -rf node_modules/ && rm -rf package-lock.json && npm install && npm start"
+    "postinstall": "ng build --aot -prod"
+
   },
   "dependencies": {
     "@angular/animations": "7.2.0",
