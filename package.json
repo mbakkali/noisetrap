@@ -7,6 +7,8 @@
     "url": "https://github.com/creativetimofficial/pk2-angular.git"
   },
   "scripts": {
+    "preinstall": "npm install -g @angular/cli @angular/compiler-cli typescript",
+
     "ng": "ng",
     "start" : "node server.js",
     "startlocal": "ng serve",
