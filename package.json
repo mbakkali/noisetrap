@@ -8,8 +8,8 @@
   },
   "scripts": {
     "ng": "ng",
-    "start": "node server.js",
-    "startlocal": "ng serve",
+    "start": "ng serve",
+    "startlocal": "node server.js",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
