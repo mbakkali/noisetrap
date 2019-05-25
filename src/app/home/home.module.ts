@@ -6,7 +6,6 @@ import {RouterModule} from '@angular/router';
 
 import {HomeComponent, NgbdModalResa} from './home.component';
 
-import {ComponentsModule} from '../components/components.module';
 
 @NgModule({
     imports: [
@@ -14,12 +13,11 @@ import {ComponentsModule} from '../components/components.module';
         BrowserModule,
         FormsModule,
         RouterModule,
-        ComponentsModule
-
     ],
     entryComponents: [NgbdModalResa],
-    declarations: [ HomeComponent,NgbdModalResa],
-    exports:[ HomeComponent ],
+    declarations: [ HomeComponent,
+        NgbdModalResa],
+    exports:[HomeComponent],
     providers: []
 })
 export class HomeModule { }
