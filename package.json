@@ -7,8 +7,6 @@
     "url": "https://github.com/creativetimofficial/pk2-angular.git"
   },
   "scripts": {
-    "preinstall": "npm install -g @angular/cli @angular/compiler-cli typescript",
-
     "ng": "ng",
     "start" : "node server.js",
     "startlocal": "ng serve",
@@ -17,7 +15,7 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "install:clean": "rm -rf node_modules/ && rm -rf package-lock.json && npm install && npm start",
-    "postinstall": "ng build --aot -prod"
+    "heroku-postbuild": "ng build --prod"
   },
   "dependencies": {
     "@angular/animations": "7.2.0",
