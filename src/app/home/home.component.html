@@ -15,16 +15,20 @@
 
                 <h2 class="presentation-subtitle text-center" style="color: red; font-weight: 800">Horaires d'ouverture</h2>
                 <h3 class="presentation-subtitle text-center">Du mardi au vendredi : 16H - 00H</h3>
-                <h3 class="presentation-subtitle text-center">Le weekend : 16H - 00H</h3>
+                <h3 class="presentation-subtitle text-center">Le weekend : 12H - 00H</h3>
             </div>
         </div>
 
     </div>
     <div class="main">
 
+
+
         <!--REPETITIONS-->
         <div class="section section-dark" id="repetitions" >
             <div class="container">
+                <div class="row">
+                </div>
                 <div class="row">
                     <div class="col-md-8 ml-auto mr-auto text-center">
                         <h2 class="title">Répétitions</h2>
@@ -49,10 +53,12 @@
                             <br>
                             <br>
                             <img src="assets/img/360degresimage1.png" class="img-rounded img-responsive" alt="Rounded Image">
-                            <a [routerLink]="['/signup']" class="btn btn-outline-neutral btn-round btn-lg">Réserver</a>
-
+                            <button (click)="onGraceSchedule()" class="btn btn-outline-neutral btn-round">Réserver</button>
                         </div>
+
+
                     </div>
+
 
                     <div class="col-lg-4 col-md-4 col-sm-12 ml-auto mr-auto">
                         <div class="card card-register" style="background-color: #0b1111;border: 3px solid white">
@@ -70,7 +76,7 @@
                             <br>
                             <br>
                             <img src="assets/img/360degresimage2.png" class="img-rounded img-responsive" alt="Rounded Image">
-                            <a [routerLink]="['/signup']" class="btn btn-outline-neutral btn-round btn-lg">Réserver</a>
+                            <button (click)="onJudySchedule()" class="btn btn-outline-neutral btn-round">Réserver</button>
 
                         </div>
                     </div>
@@ -91,7 +97,7 @@
                             <p style="text-align: left; color: white; font-weight: 800;" >Répétition enregistrée </p>
                             <br>
                             <img src="assets/img/360degresimage3.png" class="img-rounded img-responsive" alt="Rounded Image">
-                            <a [routerLink]="['/signup']" class="btn btn-outline-neutral btn-round btn-lg">Réserver</a>
+                            <button (click)="onGingerSchedule()" class="btn btn-outline-neutral btn-round">Réserver</button>
 
                         </div>
                     </div>
@@ -113,7 +119,7 @@
                             <p style="text-align: left; color: white; font-weight: 800;" >Répétition enregistrée </p>
                             <br>
                             <img src="assets/img/360degresimage4.png" class="img-rounded img-responsive" alt="Rounded Image">
-                            <a [routerLink]="['/signup']" class="btn btn-outline-neutral btn-round btn-lg">Réserver</a>
+                            <button (click)="onMarilynSchedule()"  class="btn btn-outline-neutral btn-round">Réserver</button>
 
                         </div>
                     </div>
@@ -131,7 +137,7 @@
                             <p style="text-align: left; color: white; font-weight: 800;" >Enregistrement studio </p>
                             <br>
                             <img src="assets/img/360degresimage5.png" class="img-rounded img-responsive" alt="Rounded Image">
-                            <a [routerLink]="['/signup']" class="btn btn-outline-neutral btn-round btn-lg">Réserver</a>
+                            <button (click)="onLizSchedule()" class="btn btn-outline-neutral btn-round">Réserver</button>
 
                         </div>
                     </div>
@@ -399,6 +405,8 @@
                             <h3 style="text-align: center; color: white; font-weight: 600; margin-top: 0px">ACCES</h3>
                             <h4 style="text-align: center; color: #cc0001; font-weight: 500; margin-top: 0px">09 67 59 00 89</h4>
                             <br>
+
+                            <h5  style="text-align: center; color: white; font-weight: 500; margin-bottom: 15px">15 rue Prisca  |  69100 Villeurbanne</h5>
 
                             <img src="assets/img/ico_car.png" class="center">
                             <br>
